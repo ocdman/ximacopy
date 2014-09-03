@@ -31,9 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentJson">
-      <HintPath>..\..\Infrastructure\FluentJson\obj\Debug\FluentJson.dll</HintPath>
+      <HintPath>..\..\build\FluentJson.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,18 +43,148 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\Album\AlbumData1Decorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumData2Decorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumData3Decorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumData4Decorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumDataDecorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumInfoResult1Decorator.generated.cs" />
+    <Compile Include="Configurations\Album\AlbumInfoResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Category\CategoryDataDecorator.generated.cs" />
+    <Compile Include="Configurations\Category\CategoryResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Discover\SuperExploreIndexResultDecorator.generated.cs" />
+    <Compile Include="Configurations\FocusImage\FocusImageDataDecorator.generated.cs" />
+    <Compile Include="Configurations\FocusImage\FocusImageResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Search\SearchAlbumResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Search\SearchResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Search\SearchSoundResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Search\SearchUserResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundData1Decorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundData2Decorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundData3Decorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundData4Decorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundDataDecorator.generated.cs" />
+    <Compile Include="Configurations\Sound\SoundsResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Subject\SubjectDataDecorator.generated.cs" />
+    <Compile Include="Configurations\Tags\CategoryTagResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Tags\TagAlbumsResultDecorator.generated.cs" />
+    <Compile Include="Configurations\Tags\TagDataDecorator.generated.cs" />
+    <Compile Include="Configurations\Tags\TagSoundListResultDecorator.generated.cs" />
+    <Compile Include="Configurations\User\UserData1Decorator.generated.cs" />
+    <Compile Include="Configurations\User\UserDataDecorator.generated.cs" />
+    <Compile Include="Repositories\Album\AlbumInfoResult1Repositories.generated.cs" />
+    <Compile Include="Repositories\Album\AlbumInfoResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Album\IAlbumInfoResult1Repositories.generated.cs" />
+    <Compile Include="Repositories\Album\IAlbumInfoResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Category\CategoryResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Category\ICategoryResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Discover\ISuperExploreIndexResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Discover\SuperExploreIndexResultRepositories.generated.cs" />
+    <Compile Include="Repositories\FocusImage\FocusImageResultRepositories.generated.cs" />
+    <Compile Include="Repositories\FocusImage\IFocusImageResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\ISearchAlbumResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\ISearchResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\ISearchSoundResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\ISearchUserResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\SearchAlbumResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\SearchResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\SearchSoundResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Search\SearchUserResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Sound\ISoundsResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Sound\SoundsResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\CategoryTagResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\ICategoryTagResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\ITagAlbumsResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\ITagSoundListResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\TagAlbumsResultRepositories.generated.cs" />
+    <Compile Include="Repositories\Tags\TagSoundListResultRepositories.generated.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="Decorator\ResultBase.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T4\CoreData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreData.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="T4\Includes\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="T4\Core.tt" />
+    <None Include="T4\CoreData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CoreData.cs</LastGenOutput>
+      <LastOutputs>
+..\Configurations\Album\AlbumData1Decorator.generated.cs
+..\Configurations\Album\AlbumData2Decorator.generated.cs
+..\Configurations\Album\AlbumData3Decorator.generated.cs
+..\Configurations\Album\AlbumData4Decorator.generated.cs
+..\Configurations\Album\AlbumDataDecorator.generated.cs
+..\Configurations\Album\AlbumInfoResult1Decorator.generated.cs
+..\Configurations\Album\AlbumInfoResultDecorator.generated.cs
+..\Configurations\Category\CategoryDataDecorator.generated.cs
+..\Configurations\Category\CategoryResultDecorator.generated.cs
+..\Configurations\Discover\SuperExploreIndexResultDecorator.generated.cs
+..\Configurations\FocusImage\FocusImageDataDecorator.generated.cs
+..\Configurations\FocusImage\FocusImageResultDecorator.generated.cs
+..\Configurations\Search\SearchAlbumResultDecorator.generated.cs
+..\Configurations\Search\SearchResultDecorator.generated.cs
+..\Configurations\Search\SearchSoundResultDecorator.generated.cs
+..\Configurations\Search\SearchUserResultDecorator.generated.cs
+..\Configurations\Sound\SoundData1Decorator.generated.cs
+..\Configurations\Sound\SoundData2Decorator.generated.cs
+..\Configurations\Sound\SoundData3Decorator.generated.cs
+..\Configurations\Sound\SoundData4Decorator.generated.cs
+..\Configurations\Sound\SoundDataDecorator.generated.cs
+..\Configurations\Sound\SoundsResultDecorator.generated.cs
+..\Configurations\Subject\SubjectDataDecorator.generated.cs
+..\Configurations\Tags\CategoryTagResultDecorator.generated.cs
+..\Configurations\Tags\TagAlbumsResultDecorator.generated.cs
+..\Configurations\Tags\TagDataDecorator.generated.cs
+..\Configurations\Tags\TagSoundListResultDecorator.generated.cs
+..\Configurations\User\UserData1Decorator.generated.cs
+..\Configurations\User\UserDataDecorator.generated.cs
+..\Repositories\Album\AlbumInfoResult1Repositories.generated.cs
+..\Repositories\Album\AlbumInfoResultRepositories.generated.cs
+..\Repositories\Album\IAlbumInfoResult1Repositories.generated.cs
+..\Repositories\Album\IAlbumInfoResultRepositories.generated.cs
+..\Repositories\Category\CategoryResultRepositories.generated.cs
+..\Repositories\Category\ICategoryResultRepositories.generated.cs
+..\Repositories\Discover\ISuperExploreIndexResultRepositories.generated.cs
+..\Repositories\Discover\SuperExploreIndexResultRepositories.generated.cs
+..\Repositories\FocusImage\FocusImageResultRepositories.generated.cs
+..\Repositories\FocusImage\IFocusImageResultRepositories.generated.cs
+..\Repositories\Search\ISearchAlbumResultRepositories.generated.cs
+..\Repositories\Search\ISearchResultRepositories.generated.cs
+..\Repositories\Search\ISearchSoundResultRepositories.generated.cs
+..\Repositories\Search\ISearchUserResultRepositories.generated.cs
+..\Repositories\Search\SearchAlbumResultRepositories.generated.cs
+..\Repositories\Search\SearchResultRepositories.generated.cs
+..\Repositories\Search\SearchSoundResultRepositories.generated.cs
+..\Repositories\Search\SearchUserResultRepositories.generated.cs
+..\Repositories\Sound\ISoundsResultRepositories.generated.cs
+..\Repositories\Sound\SoundsResultRepositories.generated.cs
+..\Repositories\Tags\CategoryTagResultRepositories.generated.cs
+..\Repositories\Tags\ICategoryTagResultRepositories.generated.cs
+..\Repositories\Tags\ITagAlbumsResultRepositories.generated.cs
+..\Repositories\Tags\ITagSoundListResultRepositories.generated.cs
+..\Repositories\Tags\TagAlbumsResultRepositories.generated.cs
+..\Repositories\Tags\TagSoundListResultRepositories.generated.cs
+.\CoreData.cs
+</LastOutputs>
+    </None>
+    <None Include="T4\Includes\IRepositoriesTemplate.ttinclude" />
+    <None Include="T4\Includes\JsonConfigurationDecoratorTemplate.ttinclude" />
+    <None Include="T4\Includes\JsonConfigurationTemplate.ttinclude" />
+    <None Include="T4\Includes\JsonDecoratorTemplate.ttinclude" />
+    <None Include="T4\Includes\RepositoriesTemplate.ttinclude" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\XIMALAYACOPY.Tools\XIMALAYACOPY.Tools.csproj">
+      <Project>{5217e724-2b3f-4323-8be6-0ff03726a532}</Project>
+      <Name>XIMALAYACOPY.Tools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XIMALAYACOPY.Core.Models\XIMALAYACOPY.Core.Models.csproj">
       <Project>{7b958f71-09b8-440e-9b0f-0830119859d0}</Project>
       <Name>XIMALAYACOPY.Core.Models</Name>
