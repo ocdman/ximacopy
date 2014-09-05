@@ -46,6 +46,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter\HalfValueConverter.cs" />
+    <Compile Include="Converter\TimeSpanConverter.cs" />
     <Compile Include="Extension\DateTimeExtensions.cs" />
     <Compile Include="Extension\TypeExtensions.cs" />
     <Compile Include="Extension\VisualTreeHelperExtensions.cs" />

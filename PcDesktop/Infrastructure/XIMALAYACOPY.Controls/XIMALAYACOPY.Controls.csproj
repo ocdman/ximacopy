@@ -55,6 +55,10 @@
     <Compile Include="Controls\MyCheckboxButton.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Themes\MetroSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\MyCheckboxButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -84,7 +88,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\XIMALAYACOPY.Tools\XIMALAYACOPY.Tools.csproj">
+      <Project>{5217e724-2b3f-4323-8be6-0ff03726a532}</Project>
+      <Name>XIMALAYACOPY.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
