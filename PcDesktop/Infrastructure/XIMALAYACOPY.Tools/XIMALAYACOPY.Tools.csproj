@@ -59,6 +59,43 @@
     <Compile Include="WellKnownUrl.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Images\category.png" />
+    <Content Include="Resources\Images\Category\all.png" />
+    <Content Include="Resources\Images\Category\baijia.png" />
+    <Content Include="Resources\Images\Category\book.png" />
+    <Content Include="Resources\Images\Category\chair.png" />
+    <Content Include="Resources\Images\Category\comic.png" />
+    <Content Include="Resources\Images\Category\culture.png" />
+    <Content Include="Resources\Images\Category\emotion.png" />
+    <Content Include="Resources\Images\Category\entertainment.png" />
+    <Content Include="Resources\Images\Category\finance.png" />
+    <Content Include="Resources\Images\Category\health.png" />
+    <Content Include="Resources\Images\Category\it.png" />
+    <Content Include="Resources\Images\Category\kid.png" />
+    <Content Include="Resources\Images\Category\music.png" />
+    <Content Include="Resources\Images\Category\news.png" />
+    <Content Include="Resources\Images\Category\opera.png" />
+    <Content Include="Resources\Images\Category\other.png" />
+    <Content Include="Resources\Images\Category\radio.png" />
+    <Content Include="Resources\Images\Category\radioplay.png" />
+    <Content Include="Resources\Images\Category\train.png" />
+    <Content Include="Resources\Images\Defaults\album.png" />
+    <Content Include="Resources\Images\Defaults\banner.png" />
+    <Content Include="Resources\Images\Defaults\person.jpg" />
+    <Content Include="Resources\Images\Defaults\person_186.png" />
+    <Content Include="Resources\Images\Defaults\tag.jpg" />
+    <Content Include="Resources\Images\Defaults\track.jpg" />
+    <Content Include="Resources\Images\Discover\arrow%402x.png" />
+    <Content Include="Resources\Images\Discover\bzbanner%402x.png" />
+    <Content Include="Resources\Images\Discover\bzbanner.png" />
+    <Content Include="Resources\Images\Discover\lrdticon%402x.png" />
+    <Content Include="Resources\Images\Discover\phbbanner%402x.png" />
+    <Content Include="Resources\Images\Discover\phbbanner.png" />
+    <Content Include="Resources\Images\logo.png" />
+    <Content Include="Resources\Images\search.png" />
+    <Content Include="Resources\Images\tagall.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
